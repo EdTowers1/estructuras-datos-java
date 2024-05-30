@@ -8,6 +8,7 @@ public class EstructurasDatosSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EstructurasDatosSpringApplication.class, args);
+
 	}
 
 }
