@@ -14,7 +14,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
         App app = new App();
-        int numero;
+        int suma = 0;
 
         app.apellidos[0] = "Torres";
         app.apellidos[1] = "Messi";
@@ -29,12 +29,18 @@ public class App {
         int[] precios = new int[3];
 
         for (int i = 0; i < precios.length; i++) {
-            System.out.println("Ingrese el precio");
+            System.out.println("Ingrese el precio : ");
             precios[i] = sc.nextInt();
         }
 
         for (int i = 0; i < precios.length; i++) {
             System.out.println(precios[i]);
         }
+
+        for (int i = 0; i < precios.length; i++) {
+            suma += precios[i];
+        }
+
+        System.out.println("la suma de los precio es :"+ suma);
     }
 }
