@@ -41,6 +41,10 @@ public class App {
             suma += precios[i];
         }
 
-        System.out.println("la suma de los precio es :"+ suma);
+        System.out.println("La suma de los precio es :" + suma);
+
+        double promedio = suma / precios.length;
+
+        System.out.println("El promedio es:" + promedio);
     }
 }
