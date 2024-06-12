@@ -7,8 +7,8 @@ public class App {
     public static void main(String[] args) {
         Stack<Integer> pila = new Stack<Integer>();
 
-        System.out.println("Pila vacía" + pila);
-        System.out.println("Está vacía"+ pila.isEmpty());
+        System.out.println("Pila vacía " + pila);
+        System.out.println("Está vacía "+ pila.isEmpty());
 
 
         // aquí se agregan elementos a la pila
@@ -22,5 +22,16 @@ public class App {
         for (int i = 0; i < pila.size(); i++) {
             System.out.println(pila.get(i));
         }
+
+        // se muestran resultadios de la pila
+        System.out.println("pila : "+ pila);
+        System.out.println("Está vacía "+ pila.isEmpty());
+
+        pila.pop(); // elimina el ultimo elemento que ingresó a la pila
+        System.out.println("Está el número 3 ?" + pila.search(3));
+        System.out.println("Ultimo elemento agregado: " + pila.peek());
     }
+
+    
+    
 }
